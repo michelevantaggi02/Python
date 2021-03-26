@@ -1,0 +1,28 @@
+{"intents": [
+    {"tag": "saluto",
+        "pattern": ["Ciao","Come va?", "Come stai?", "Buon giorno", "Buongiorno"],
+        "risposte": ["Ciao!", "Felice di rivederti!", "Ben tornato!"],
+        "contesto":""
+
+    },
+    {"tag": "arrivederci",
+        "pattern": ["Arrivederci","Ci vediamo dopo", "Me ne vado", "Vado via", "Buona giornata"],
+        "risposte": ["Ciao!", "Arrivederci!", "Buona giornata!"],
+        "contesto":""
+
+    },
+    {"tag": "eta",
+        "pattern": ["Quanti anni","Quanti anni hai?", "età?", "qual è la tua età?"],
+        "risposte": ["Ho 17 anni!", "Michele ha 17 anni"],
+        "contesto":""
+
+    },
+    {"tag": "nome",
+        "pattern": ["Come ti chiami","come devo chiamarti", "nome?", "qual è il tuo nome?"],
+        "risposte": ["Mi chiamo Michele", "Il mio nome è Michele"],
+        "contesto":""
+
+    }
+]
+
+}

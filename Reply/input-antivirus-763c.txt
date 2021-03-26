@@ -1,0 +1,61 @@
+10
+5 10 10 7
+5
+hsich
+vscyhsichk
+hsichcaaij
+jhsichf
+9 6 5 8
+2
+adcbcbcba
+cbbcdd
+bcddc
+adbcbcda
+7 5 9 5
+5
+ycnedtk
+ycned
+tqvycnedc
+ycned
+5 5 7 9
+5
+bbbac
+bbbac
+bbbbacd
+ccbbbacab
+6 9 9 10
+4
+ztfple
+fplerqqai
+ngufzfple
+fpleyormft
+10 7 6 10
+6
+caadacacdc
+aadacac
+adacac
+cadacacacd
+7 5 7 8
+5
+ebxiwvk
+xiwvk
+wlxiwvk
+xiwvkiqc
+6 9 7 9
+5
+dbddba
+ccdabddba
+cbddbaa
+ccbbddbad
+8 9 5 8
+2
+lpxenvoi
+pxpteoubz
+wpxqq
+mmsdlpxi
+7 9 10 10
+4
+cabdddb
+aadcbbddd
+dcadccbddd
+bdddaccbdd

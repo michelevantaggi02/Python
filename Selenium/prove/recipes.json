@@ -1,0 +1,78 @@
+{
+    "recipes":[
+        {
+            "name":"carbonara",
+            "ingredients":[
+               {
+                   "name": "spaghetti",
+                    "amount":500,
+                    "unit": "g"
+                },
+                {
+                    "name":"egg",
+                    "amount":5,
+                    "unit":null
+                },
+                {
+                    "name":"pig cheek",
+                    "amount":200,
+                    "unit":"g"
+                },
+                {
+                    "name":"black pepper",
+                    "amount":"q.s.",
+                    "unit":null
+                },
+                {
+                    "name":"salt",
+                    "amount":"q.s.",
+                    "unit":null
+                },
+                {
+                    "name":"grated parmesan",
+                    "amount":30,
+                    "unit":"g"
+                },
+                {
+                    "name":"grated pecorino cheese",
+                    "amount":90,
+                    "unit":"g"
+                }
+            ],
+            "creation":{
+                "preparation": [
+                    "Cut pig cheek",
+                    "Divide 4 yolks",
+                    "Beat the yolks and add the last egg",    
+                    "Add salt and pepper to the yolks",
+                    "Add parmesan and pecorino cheese to the yolks",
+                    "beat to form a cream",
+                    "boil water for the pasta"
+                ],
+                "cooking":[
+                    {
+                        "action":"heat the pig cheek",
+                        "duration":3,
+                        "unit":"minutes",
+                        "after":"add it to the cream"
+                    },
+                    {
+                        "action":"cook spaghetti",
+                        "duration":10,
+                        "unit":"minutes",
+                        "after":null
+                    },
+                    {
+                        "action":"Heat the cream a little",
+                        "duration":1,
+                        "unit":"minutes",
+                        "after":null
+                    }
+                ],
+                "seasoning":["drain the pasta and add the cream"],
+                "serving":"still hot"
+                
+            }
+        }
+    ]
+}

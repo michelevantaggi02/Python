@@ -1,0 +1,2765 @@
+{
+    "name": "COVID-19 COMUNI della Regione Umbria v.2 ",
+    "description": "",
+    "id": 65,
+    "parameters": [
+        {
+            "name": "Intervallo di date",
+            "slug": "intervallo_di_date",
+            "id": "3249390b",
+            "type": "date/range"
+        },
+        {
+            "name": "Comune da visualizzare",
+            "slug": "comune_da_visualizzare",
+            "id": "d74805ef",
+            "type": "category"
+        }
+    ],
+    "ordered_cards": [
+        {
+            "sizeX": 18,
+            "series": [],
+            "card": {},
+            "col": 0,
+            "id": 762,
+            "parameter_mappings": [],
+            "card_id": null,
+            "visualization_settings": {
+                "virtual_card": {
+                    "name": null,
+                    "display": "text",
+                    "visualization_settings": {},
+                    "dataset_query": {},
+                    "archived": false
+                },
+                "text": "Dashboard realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0.  I dati vengono pubblicati nella dashboard anche più volte al giorno,  in base al loro aggiornamento progressivo e dopo validazione da parte del COR. Occorre quindi fare riferimento a data ed orario indicati per ogni informazione. Inoltre, non tutte le fonti dati sono aggiornate con la stessa cadenza temporale.\nPer ulteriori dettagli vedere la [pagina descrittiva delle definizioni usate](https://github.com/Regione-Umbria/coronavirus/). Per eventuali segnalazioni sui dati: [prociv@regione.umbria.it](mailto:prociv@regione.umbria.it)\n",
+                "text.align_vertical": "top",
+                "text.align_horizontal": "center",
+                "dashcard.background": true
+            },
+            "dashboard_id": 65,
+            "sizeY": 12,
+            "row": 35
+        },
+        {
+            "sizeX": 5,
+            "series": [],
+            "card": {},
+            "col": 0,
+            "id": 768,
+            "parameter_mappings": [],
+            "card_id": null,
+            "visualization_settings": {
+                "virtual_card": {
+                    "name": null,
+                    "display": "text",
+                    "visualization_settings": {},
+                    "dataset_query": {},
+                    "archived": false
+                },
+                "text": "![logo](https://regione-umbria.github.io/coronavirus/loghi/logo_AdUmbria_OK.png)\n![logo](https://regione-umbria.github.io/coronavirus/loghi/logo_ProCiv_RU_ANCI.png)\n"
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 5
+        },
+        {
+            "sizeX": 18,
+            "series": [],
+            "card": {},
+            "col": 0,
+            "id": 802,
+            "parameter_mappings": [],
+            "card_id": null,
+            "visualization_settings": {
+                "virtual_card": {
+                    "name": null,
+                    "display": "text",
+                    "visualization_settings": {},
+                    "dataset_query": {},
+                    "archived": false
+                },
+                "text": "Usare i box in alto a destra per specificare il comune su cui filtrare i dati e/o il periodo temporale che si vuole visualizzare.\n\nSe si seleziona dall'elenco più di un comune verrà presentata la somma dei relativi dati."
+            },
+            "dashboard_id": 65,
+            "sizeY": 2,
+            "row": 0
+        },
+        {
+            "sizeX": 5,
+            "series": [],
+            "card": {
+                "id": 566,
+                "name": "00 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Grouped by data (hour), Filtered by data",
+                "description": null,
+                "display": "scalar",
+                "visualization_settings": {
+                    "table.pivot_column": "data",
+                    "table.columns": [
+                        {
+                            "name": "attualmente_positivi",
+                            "fieldRef": [
+                                "field-id",
+                                14910
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "campoB",
+                            "fieldRef": [
+                                "field-id",
+                                14894
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "campoC",
+                            "fieldRef": [
+                                "field-id",
+                                14908
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "casi_positivi",
+                            "fieldRef": [
+                                "field-id",
+                                14893
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "codice_geo",
+                            "fieldRef": [
+                                "field-id",
+                                14913
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "codice_regione",
+                            "fieldRef": [
+                                "field-id",
+                                14907
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "data",
+                            "fieldRef": [
+                                "datetime-field",
+                                [
+                                    "field-id",
+                                    14914
+                                ],
+                                "default"
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "deceduti",
+                            "fieldRef": [
+                                "field-id",
+                                14898
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "denominazione_geo",
+                            "fieldRef": [
+                                "field-id",
+                                14892
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "denominazione_regione",
+                            "fieldRef": [
+                                "field-id",
+                                14906
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "di_cui_ricoverati_con_sintomi",
+                            "fieldRef": [
+                                "field-id",
+                                14890
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "di_cui_ricoverati_in_terapia_intensiva",
+                            "fieldRef": [
+                                "field-id",
+                                14903
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "guariti",
+                            "fieldRef": [
+                                "field-id",
+                                14899
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "guariti_clinici",
+                            "fieldRef": [
+                                "field-id",
+                                14897
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "in_isolamento_domiciliare",
+                            "fieldRef": [
+                                "field-id",
+                                14895
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "isolamento_volontario",
+                            "fieldRef": [
+                                "field-id",
+                                14915
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "lat_geo",
+                            "fieldRef": [
+                                "field-id",
+                                15096
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "long_geo",
+                            "fieldRef": [
+                                "field-id",
+                                15097
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "media_tasso_positivo",
+                            "fieldRef": [
+                                "field-id",
+                                14912
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "note",
+                            "fieldRef": [
+                                "field-id",
+                                14917
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "nuovi_positivi",
+                            "fieldRef": [
+                                "field-id",
+                                14900
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "residenti",
+                            "fieldRef": [
+                                "field-id",
+                                14911
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "ricoverati_totale",
+                            "fieldRef": [
+                                "field-id",
+                                14918
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "sign_positivi_x1000",
+                            "fieldRef": [
+                                "field-id",
+                                14902
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "stato",
+                            "fieldRef": [
+                                "field-id",
+                                14904
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "status",
+                            "fieldRef": [
+                                "field-id",
+                                14909
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "tamponi_eseguiti",
+                            "fieldRef": [
+                                "field-id",
+                                14896
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "tamponi_positivi",
+                            "fieldRef": [
+                                "field-id",
+                                15098
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "tasso_positivi_x1000",
+                            "fieldRef": [
+                                "field-id",
+                                14905
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "tipo_geo",
+                            "fieldRef": [
+                                "field-id",
+                                14916
+                            ],
+                            "enabled": false
+                        },
+                        {
+                            "name": "usciti_da_isolamento",
+                            "fieldRef": [
+                                "field-id",
+                                14889
+                            ],
+                            "enabled": false
+                        }
+                    ],
+                    "table.cell_column": "note"
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 0,
+            "id": 804,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 566,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 566,
+            "visualization_settings": {
+                "table.pivot_column": "data",
+                "table.columns": [
+                    {
+                        "name": "attualmente_positivi",
+                        "fieldRef": [
+                            "field-id",
+                            14910
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "campoB",
+                        "fieldRef": [
+                            "field-id",
+                            14894
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "campoC",
+                        "fieldRef": [
+                            "field-id",
+                            14908
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "casi_positivi",
+                        "fieldRef": [
+                            "field-id",
+                            14893
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "codice_geo",
+                        "fieldRef": [
+                            "field-id",
+                            14913
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "codice_regione",
+                        "fieldRef": [
+                            "field-id",
+                            14907
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "data",
+                        "fieldRef": [
+                            "datetime-field",
+                            [
+                                "field-id",
+                                14914
+                            ],
+                            "default"
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "deceduti",
+                        "fieldRef": [
+                            "field-id",
+                            14898
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "denominazione_geo",
+                        "fieldRef": [
+                            "field-id",
+                            14892
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "denominazione_regione",
+                        "fieldRef": [
+                            "field-id",
+                            14906
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "di_cui_ricoverati_con_sintomi",
+                        "fieldRef": [
+                            "field-id",
+                            14890
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "di_cui_ricoverati_in_terapia_intensiva",
+                        "fieldRef": [
+                            "field-id",
+                            14903
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "guariti",
+                        "fieldRef": [
+                            "field-id",
+                            14899
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "guariti_clinici",
+                        "fieldRef": [
+                            "field-id",
+                            14897
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "in_isolamento_domiciliare",
+                        "fieldRef": [
+                            "field-id",
+                            14895
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "isolamento_volontario",
+                        "fieldRef": [
+                            "field-id",
+                            14915
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "lat_geo",
+                        "fieldRef": [
+                            "field-id",
+                            15096
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "long_geo",
+                        "fieldRef": [
+                            "field-id",
+                            15097
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "media_tasso_positivo",
+                        "fieldRef": [
+                            "field-id",
+                            14912
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "note",
+                        "fieldRef": [
+                            "field-id",
+                            14917
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "nuovi_positivi",
+                        "fieldRef": [
+                            "field-id",
+                            14900
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "residenti",
+                        "fieldRef": [
+                            "field-id",
+                            14911
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "ricoverati_totale",
+                        "fieldRef": [
+                            "field-id",
+                            14918
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "sign_positivi_x1000",
+                        "fieldRef": [
+                            "field-id",
+                            14902
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "stato",
+                        "fieldRef": [
+                            "field-id",
+                            14904
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "status",
+                        "fieldRef": [
+                            "field-id",
+                            14909
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "tamponi_eseguiti",
+                        "fieldRef": [
+                            "field-id",
+                            14896
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "tamponi_positivi",
+                        "fieldRef": [
+                            "field-id",
+                            15098
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "tasso_positivi_x1000",
+                        "fieldRef": [
+                            "field-id",
+                            14905
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "tipo_geo",
+                        "fieldRef": [
+                            "field-id",
+                            14916
+                        ],
+                        "enabled": false
+                    },
+                    {
+                        "name": "usciti_da_isolamento",
+                        "fieldRef": [
+                            "field-id",
+                            14889
+                        ],
+                        "enabled": false
+                    }
+                ],
+                "table.cell_column": "note",
+                "card.title": "aggiornamento dati",
+                "column_settings": {
+                    "[\"ref\",[\"field-id\",14852]]": {
+                        "time_style": "k:mm",
+                        "date_style": "D/M/YYYY"
+                    },
+                    "[\"ref\",[\"field-id\",14914]]": {
+                        "time_style": "k:mm",
+                        "date_style": "D/M/YYYY"
+                    }
+                }
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 2
+        },
+        {
+            "sizeX": 9,
+            "series": [
+                {
+                    "id": 600,
+                    "name": "COMUNI 02 VBASEDASHBOARDCOVIDs, TOT UMBRIA Sum of attualmente_positivi su RESIDENTI",
+                    "description": null,
+                    "display": "line",
+                    "visualization_settings": {
+                        "graph.show_values": false,
+                        "table.columns": [
+                            {
+                                "name": "attualmente_positivi",
+                                "fieldRef": [
+                                    "field-id",
+                                    14910
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "campoB",
+                                "fieldRef": [
+                                    "field-id",
+                                    14894
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "campoC",
+                                "fieldRef": [
+                                    "field-id",
+                                    14908
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "casi_positivi",
+                                "fieldRef": [
+                                    "field-id",
+                                    14893
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "codice_geo",
+                                "fieldRef": [
+                                    "field-id",
+                                    14913
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "codice_regione",
+                                "fieldRef": [
+                                    "field-id",
+                                    14907
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "data",
+                                "fieldRef": [
+                                    "datetime-field",
+                                    [
+                                        "field-id",
+                                        14914
+                                    ],
+                                    "default"
+                                ],
+                                "enabled": true
+                            },
+                            {
+                                "name": "deceduti",
+                                "fieldRef": [
+                                    "field-id",
+                                    14898
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "denominazione_geo",
+                                "fieldRef": [
+                                    "field-id",
+                                    14892
+                                ],
+                                "enabled": true
+                            },
+                            {
+                                "name": "denominazione_regione",
+                                "fieldRef": [
+                                    "field-id",
+                                    14906
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "di_cui_ricoverati_con_sintomi",
+                                "fieldRef": [
+                                    "field-id",
+                                    14890
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "di_cui_ricoverati_in_terapia_intensiva",
+                                "fieldRef": [
+                                    "field-id",
+                                    14903
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "guariti",
+                                "fieldRef": [
+                                    "field-id",
+                                    14899
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "guariti_clinici",
+                                "fieldRef": [
+                                    "field-id",
+                                    14897
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "in_isolamento_domiciliare",
+                                "fieldRef": [
+                                    "field-id",
+                                    14895
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "isolamento_volontario",
+                                "fieldRef": [
+                                    "field-id",
+                                    14915
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "lat_geo",
+                                "fieldRef": [
+                                    "field-id",
+                                    15096
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "long_geo",
+                                "fieldRef": [
+                                    "field-id",
+                                    15097
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "media_tasso_positivo",
+                                "fieldRef": [
+                                    "field-id",
+                                    14912
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "note",
+                                "fieldRef": [
+                                    "field-id",
+                                    14917
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "nuovi_positivi",
+                                "fieldRef": [
+                                    "field-id",
+                                    14900
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "residenti",
+                                "fieldRef": [
+                                    "field-id",
+                                    14911
+                                ],
+                                "enabled": true
+                            },
+                            {
+                                "name": "ricoverati_totale",
+                                "fieldRef": [
+                                    "field-id",
+                                    14918
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "sign_positivi_x1000",
+                                "fieldRef": [
+                                    "field-id",
+                                    14902
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "stato",
+                                "fieldRef": [
+                                    "field-id",
+                                    14904
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "status",
+                                "fieldRef": [
+                                    "field-id",
+                                    14909
+                                ],
+                                "enabled": true
+                            },
+                            {
+                                "name": "tamponi_eseguiti",
+                                "fieldRef": [
+                                    "field-id",
+                                    14896
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "tamponi_positivi",
+                                "fieldRef": [
+                                    "field-id",
+                                    15098
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "tasso_positivi_x1000",
+                                "fieldRef": [
+                                    "field-id",
+                                    14905
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "tipo_geo",
+                                "fieldRef": [
+                                    "field-id",
+                                    14916
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "usciti_da_isolamento",
+                                "fieldRef": [
+                                    "field-id",
+                                    14889
+                                ],
+                                "enabled": false
+                            },
+                            {
+                                "name": "Tasso Attualmente positivi x 1000",
+                                "fieldRef": [
+                                    "expression",
+                                    "Tasso Attualmente positivi x 1000"
+                                ],
+                                "enabled": true
+                            },
+                            {
+                                "name": "data",
+                                "field_ref": [
+                                    "field-id",
+                                    14914
+                                ],
+                                "enabled": true
+                            }
+                        ],
+                        "graph.x_axis.labels_enabled": false,
+                        "table.cell_column": "attualmente_positivi",
+                        "graph.y_axis.max": 1110,
+                        "graph.x_axis.axis_enabled": false,
+                        "graph.y_axis.labels_enabled": false,
+                        "graph.label_value_frequency": "fit",
+                        "graph.metrics": [
+                            "min"
+                        ],
+                        "graph.label_value_formatting": "auto",
+                        "scalar.switch_positive_negative": true,
+                        "table.pivot_column": "campoA",
+                        "column_settings": {
+                            "[\"name\",\"sum\"]": {
+                                "number_separators": ",."
+                            }
+                        },
+                        "series_settings": {
+                            "sum": {
+                                "line.interpolate": "linear",
+                                "line.marker_enabled": false,
+                                "display": "area"
+                            },
+                            "Tasso Attualmente positivi x 1000": {
+                                "color": "#74838f"
+                            }
+                        },
+                        "graph.y_axis.auto_range": true,
+                        "graph.x_axis.scale": "timeseries",
+                        "graph.dimensions": [
+                            "data"
+                        ],
+                        "graph.y_axis.min": 700
+                    },
+                    "dataset_query": {
+                        "type": "query"
+                    }
+                }
+            ],
+            "card": {
+                "id": 602,
+                "name": "COMUNI 02 VBASEDASHBOARDCOVIDs, FILTRO %attualmente_positivi su RESIDENTI",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": false,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": true,
+                    "graph.y_axis.labels_enabled": false,
+                    "card.title": "Attualmente positivi per 1.000 residenti  - Confronto nel tempo",
+                    "graph.y_axis.auto_split": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "min"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "card.description": "Se si seleziona più di un comune viene visualizzato il valore massimo ",
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "line",
+                            "title": "Comune Selezionato",
+                            "color": "#EF8C8C"
+                        },
+                        "COMUNI 02 VBASEDASHBOARDCOVIDs, TOT UMBRIA Sum of attualmente_positivi su RESIDENTI": {
+                            "title": "Regione Umbria",
+                            "display": "area",
+                            "line.marker_enabled": false,
+                            "line.interpolate": "cardinal",
+                            "color": "#74838f"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 9,
+            "id": 843,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 602,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 602,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 600,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 602,
+            "visualization_settings": {
+                "graph.show_values": false,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": true,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Attualmente positivi per 1.000 residenti  - Confronto nel tempo",
+                "graph.y_axis.auto_split": false,
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "card.description": "Se si seleziona più di un comune viene visualizzato il valore massimo ",
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "line",
+                        "title": "Comune Selezionato",
+                        "color": "#EF8C8C"
+                    },
+                    "COMUNI 02 VBASEDASHBOARDCOVIDs, TOT UMBRIA Sum of attualmente_positivi su RESIDENTI": {
+                        "title": "Regione Umbria",
+                        "display": "area",
+                        "line.marker_enabled": false,
+                        "line.interpolate": "cardinal",
+                        "color": "#74838f"
+                    },
+                    "min": {
+                        "title": "Comune selezionato",
+                        "color": "#EF8C8C"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 17
+        },
+        {
+            "sizeX": 9,
+            "series": [
+                {
+                    "id": 605,
+                    "name": "COMUNI 04 VBASEDASHBOARDCOVIDs, TOT UMBRIA  casi positivi, Grouped by data (day), Filtered by denominazione_geo",
+                    "description": null,
+                    "display": "line",
+                    "visualization_settings": {
+                        "graph.show_values": false,
+                        "graph.x_axis.labels_enabled": false,
+                        "table.cell_column": "attualmente_positivi",
+                        "graph.y_axis.max": 1110,
+                        "graph.x_axis.axis_enabled": false,
+                        "graph.y_axis.labels_enabled": false,
+                        "graph.label_value_frequency": "fit",
+                        "graph.metrics": [
+                            "sum"
+                        ],
+                        "graph.label_value_formatting": "auto",
+                        "scalar.switch_positive_negative": true,
+                        "table.pivot_column": "campoA",
+                        "column_settings": {
+                            "[\"name\",\"sum\"]": {
+                                "number_separators": ",."
+                            }
+                        },
+                        "series_settings": {
+                            "sum": {
+                                "line.interpolate": "linear",
+                                "line.marker_enabled": false,
+                                "display": "area"
+                            }
+                        },
+                        "graph.y_axis.auto_range": true,
+                        "graph.x_axis.scale": "timeseries",
+                        "graph.dimensions": [
+                            "data"
+                        ],
+                        "graph.y_axis.min": 700
+                    },
+                    "dataset_query": {
+                        "type": "query"
+                    }
+                }
+            ],
+            "card": {
+                "id": 606,
+                "name": "COMUNI 04 VBASEDASHBOARDCOVIDs, FILTRO casi_positivi_x_1000 residenti, Grouped by data (day), Filtered by denominazione_geo",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": false,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": false,
+                    "graph.y_axis.labels_enabled": false,
+                    "card.title": "Casi positivi (totali) x 1000 residenti - Confronto nel tempo",
+                    "graph.y_axis.auto_split": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "min"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "card.description": "Se si seleziona più di un comune viene visualizzato il valore massimo ",
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": false,
+                            "display": "area",
+                            "color": "#EF8C8C",
+                            "title": "Comune Selezionato"
+                        },
+                        "COMUNI 04 VBASEDASHBOARDCOVIDs, TOT UMBRIA  casi positivi, Grouped by data (day), Filtered by denominazione_geo": {
+                            "color": "#74838f",
+                            "title": "Regione Umbria",
+                            "line.marker_enabled": false,
+                            "display": "area"
+                        },
+                        "max": {
+                            "title": "Comune selezionato",
+                            "color": "#EF8C8C"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 9,
+            "id": 846,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 606,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 606,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 605,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 606,
+            "visualization_settings": {
+                "graph.show_values": false,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": false,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Casi positivi (totali) x 1000 residenti - Confronto nel tempo",
+                "graph.y_axis.auto_split": false,
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "card.description": "Se si seleziona più di un comune viene visualizzato il valore massimo ",
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "line",
+                        "color": "#EF8C8C",
+                        "title": "Comune Selezionato"
+                    },
+                    "COMUNI 04 VBASEDASHBOARDCOVIDs, TOT UMBRIA  casi positivi, Grouped by data (day), Filtered by denominazione_geo": {
+                        "color": "#74838f",
+                        "title": "Regione Umbria",
+                        "line.marker_enabled": false,
+                        "display": "area"
+                    },
+                    "max": {
+                        "title": "Comune selezionato",
+                        "color": "#EF8C8C"
+                    },
+                    "min": {
+                        "title": "Comune selezionato",
+                        "color": "#EF8C8C"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 11
+        },
+        {
+            "sizeX": 9,
+            "series": [],
+            "card": {
+                "id": 607,
+                "name": "COMUNI 01 VBASEDASHBOARDCOVIDs, FILTRO Sum of attualmente_positivi, Filtered by denominazione_geo",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": true,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": false,
+                    "graph.y_axis.labels_enabled": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "sum"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "line",
+                            "color": "#A989C5"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 0,
+            "id": 847,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 607,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 607,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 607,
+            "visualization_settings": {
+                "graph.show_values": false,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": true,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Attualmente positivi nel tempo",
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "card.description": "",
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "area",
+                        "color": "#EF8C8C"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 17
+        },
+        {
+            "sizeX": 4,
+            "series": [],
+            "card": {
+                "id": 554,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of casi_positivi, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 10,
+            "id": 853,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 554,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 554,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 554,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "card.title": "Casi positivi (totale)"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 5
+        },
+        {
+            "sizeX": 3,
+            "series": [],
+            "card": {
+                "id": 563,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of attualmente_positivi, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 5,
+            "id": 854,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 563,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 563,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 563,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "card.title": "Attualmente positivi"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 2
+        },
+        {
+            "sizeX": 3,
+            "series": [],
+            "card": {
+                "id": 556,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of deceduti, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 15,
+            "id": 855,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 556,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 556,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 556,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "card.title": "Deceduti"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 2
+        },
+        {
+            "sizeX": 4,
+            "series": [],
+            "card": {
+                "id": 558,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of di_cui_ricoverati_in_terapia_intensiva, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 14,
+            "id": 856,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 558,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 558,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 558,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "card.title": "di cui in terapia intensiva"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 8
+        },
+        {
+            "sizeX": 3,
+            "series": [],
+            "card": {
+                "id": 555,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of guariti, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoC",
+                    "table.cell_column": "attualmente_positivi"
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 12,
+            "id": 857,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 555,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 555,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 555,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "table.pivot_column": "campoC",
+                "table.cell_column": "attualmente_positivi",
+                "card.title": "Guariti"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 2
+        },
+        {
+            "sizeX": 4,
+            "series": [],
+            "card": {
+                "id": 560,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of ricoverati_totale, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 10,
+            "id": 858,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 560,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 560,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 560,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "card.title": "Ricoverati (totale)"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 8
+        },
+        {
+            "sizeX": 4,
+            "series": [],
+            "card": {
+                "id": 559,
+                "name": "01 SER_COVID_TRACCIATO_DA_REGIONE_v3s, Sum of in_isolamento_domiciliare, Grouped by data (day)",
+                "description": null,
+                "display": "smartscalar",
+                "visualization_settings": {
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "scalar.switch_positive_negative": true
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 14,
+            "id": 859,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 559,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 559,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 559,
+            "visualization_settings": {
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "scalar.switch_positive_negative": true,
+                "card.title": "in isolamento contumaciale"
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 5
+        },
+        {
+            "sizeX": 9,
+            "series": [],
+            "card": {
+                "id": 622,
+                "name": "COMUNI 04 VBASEDASHBOARDCOVIDs, FILTRO Sum of deceduti, Grouped by data (day), Filtered by denominazione_geo and tipo_geo",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": true,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": false,
+                    "graph.y_axis.labels_enabled": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "sum"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "line",
+                            "color": "#A989C5"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 9,
+            "id": 894,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 622,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 622,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 622,
+            "visualization_settings": {
+                "graph.show_values": true,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": true,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Decessi nel tempo",
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "area",
+                        "color": "#A989C5"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 29
+        },
+        {
+            "sizeX": 18,
+            "series": [],
+            "card": {
+                "id": 623,
+                "name": "COMUNI 04 VBASEDASHBOARDCOVIDs, Sum of in_isolamento_domiciliare, Grouped by data (day), Filtered by denominazione_geo and tipo_geo",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": true,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": false,
+                    "graph.y_axis.labels_enabled": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "sum"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "line",
+                            "color": "#A989C5"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 0,
+            "id": 895,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 623,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 623,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 623,
+            "visualization_settings": {
+                "graph.show_values": true,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": true,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "in isolamento contumaciale",
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "area",
+                        "color": "#EF8C8C"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 23
+        },
+        {
+            "sizeX": 9,
+            "series": [],
+            "card": {
+                "id": 624,
+                "name": "COMUNI 05 VBASEDASHBOARDCOVIDs, Sum of casi_positivi and Sum of guariti, Grouped by data (day), Filtered by denominazione_geo, tipo_geo, and denominazione_geo",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": true,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": true,
+                    "graph.y_axis.labels_enabled": false,
+                    "card.title": "in isolamento domiciliare",
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "sum",
+                        "sum_2"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "area",
+                            "color": "#A989C5"
+                        },
+                        "sum_2": {
+                            "color": "#88BF4D",
+                            "display": "area"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 0,
+            "id": 896,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 624,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 624,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 624,
+            "visualization_settings": {
+                "graph.show_values": true,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": true,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Casi positivi (totali) e guariti nel tempo",
+                "graph.y_axis.auto_split": false,
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum",
+                    "sum_2"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "area",
+                        "color": "#EF8C8C",
+                        "title": "casi_positivi"
+                    },
+                    "sum_2": {
+                        "color": "#88BF4D",
+                        "display": "area",
+                        "title": "guariti"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 11
+        },
+        {
+            "sizeX": 5,
+            "series": [],
+            "card": {
+                "id": 625,
+                "name": "568 VBASEDASHBOARDCOVIDs, Filtered by data and tipo_geo",
+                "description": null,
+                "display": "map",
+                "visualization_settings": {
+                    "map.region": "0b1b41aa-9cae-7c07-661f-2bb58b3da2e1",
+                    "map.dimension": "codice_geo",
+                    "map.type": "region",
+                    "table.pivot": false,
+                    "map.latitude_column": "max",
+                    "table.columns": [
+                        {
+                            "name": "tasso_positivi_x1000",
+                            "fieldRef": [
+                                "field-id",
+                                14905
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "fieldRef": [
+                                "field-id",
+                                14910
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "Tasso Casi Positivi x1000 Residenti",
+                            "field_ref": [
+                                "expression",
+                                "Tasso Casi Positivi x1000 Residenti"
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "PrevalenzaCasiAttualmentePositivi x1000 residenti",
+                            "field_ref": [
+                                "expression",
+                                "PrevalenzaCasiAttualmentePositivi x1000 residenti"
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "%Guariti su Casi Positivi",
+                            "field_ref": [
+                                "expression",
+                                "%Guariti su Casi Positivi"
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "fieldRef": [
+                                "field-id",
+                                14892
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "fieldRef": [
+                                "field-id",
+                                14913
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "Ricoveratu su attualmente positivi x1000",
+                            "field_ref": [
+                                "expression",
+                                "Ricoveratu su attualmente positivi x1000"
+                            ],
+                            "enabled": true
+                        },
+                        {
+                            "name": "%Decessi su casi positivi",
+                            "field_ref": [
+                                "expression",
+                                "%Decessi su casi positivi"
+                            ],
+                            "enabled": true
+                        }
+                    ],
+                    "map.metric": "attualmente_positivi",
+                    "table.cell_column": "attualmente_positivi",
+                    "map.colors": [
+                        "#fcdada",
+                        "#f9b4b4",
+                        "#f58e8e",
+                        "#f26868",
+                        "hsl(0, 83.1%, 52%)"
+                    ],
+                    "card.title": "Attualmente Positivi",
+                    "card.description": "Attuale numero di casi positivi",
+                    "table.pivot_column": "campoB"
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 5,
+            "id": 897,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 625,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 625,
+            "visualization_settings": {
+                "map.region": "0b1b41aa-9cae-7c07-661f-2bb58b3da2e1",
+                "map.dimension": "codice_geo",
+                "map.type": "region",
+                "table.pivot": false,
+                "map.latitude_column": "max",
+                "table.columns": [
+                    {
+                        "name": "tasso_positivi_x1000",
+                        "fieldRef": [
+                            "field-id",
+                            14905
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "fieldRef": [
+                            "field-id",
+                            14910
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "Tasso Casi Positivi x1000 Residenti",
+                        "field_ref": [
+                            "expression",
+                            "Tasso Casi Positivi x1000 Residenti"
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "PrevalenzaCasiAttualmentePositivi x1000 residenti",
+                        "field_ref": [
+                            "expression",
+                            "PrevalenzaCasiAttualmentePositivi x1000 residenti"
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "%Guariti su Casi Positivi",
+                        "field_ref": [
+                            "expression",
+                            "%Guariti su Casi Positivi"
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "fieldRef": [
+                            "field-id",
+                            14892
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "fieldRef": [
+                            "field-id",
+                            14913
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "Ricoveratu su attualmente positivi x1000",
+                        "field_ref": [
+                            "expression",
+                            "Ricoveratu su attualmente positivi x1000"
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "name": "%Decessi su casi positivi",
+                        "field_ref": [
+                            "expression",
+                            "%Decessi su casi positivi"
+                        ],
+                        "enabled": true
+                    }
+                ],
+                "map.metric": "attualmente_positivi",
+                "table.cell_column": "attualmente_positivi",
+                "map.colors": [
+                    "#fcdada",
+                    "#f9b4b4",
+                    "#f58e8e",
+                    "#f26868",
+                    "hsl(0, 83.1%, 52%)"
+                ],
+                "card.title": "Attualmente Positivi",
+                "card.description": "Attuale numero di casi positivi",
+                "table.pivot_column": "campoB"
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 5
+        },
+        {
+            "sizeX": 9,
+            "series": [],
+            "card": {
+                "id": 626,
+                "name": "COMUNI 06 VBASEDASHBOARDCOVIDs, Sum of ricoverati_totale and Sum of di_cui_ricoverati_in_terapia_intensiva, Grouped by data (day), Filtered by denominazione_geo, tipo_geo, and denominazione_geo",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": true,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": true,
+                    "graph.y_axis.labels_enabled": false,
+                    "card.title": "Ricoverati ",
+                    "graph.y_axis.auto_split": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "sum",
+                        "sum_2"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "area",
+                            "color": "#A989C5"
+                        },
+                        "sum_2": {
+                            "color": "#7172AD",
+                            "display": "area"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 0,
+            "id": 898,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 626,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 626,
+            "visualization_settings": {
+                "graph.show_values": true,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 1110,
+                "graph.x_axis.axis_enabled": true,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Ricoverati ",
+                "graph.y_axis.auto_split": false,
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "area",
+                        "color": "#F2A86F"
+                    }
+                },
+                "graph.y_axis.auto_range": true,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 700
+            },
+            "dashboard_id": 65,
+            "sizeY": 6,
+            "row": 29
+        },
+        {
+            "sizeX": 4,
+            "series": [],
+            "card": {
+                "id": 627,
+                "name": "COMUNI 01 VBASEDASHBOARDCOVIDs, FILTRO LAST WEEK Sum of attualmente_positivi, Grouped by data (day), Filtered by denominazione_geo, tipo_geo, and data",
+                "description": null,
+                "display": "line",
+                "visualization_settings": {
+                    "graph.show_values": true,
+                    "graph.x_axis.labels_enabled": false,
+                    "table.cell_column": "attualmente_positivi",
+                    "graph.y_axis.max": 1110,
+                    "graph.x_axis.axis_enabled": false,
+                    "graph.y_axis.labels_enabled": false,
+                    "graph.label_value_frequency": "fit",
+                    "graph.metrics": [
+                        "sum"
+                    ],
+                    "graph.label_value_formatting": "auto",
+                    "scalar.switch_positive_negative": true,
+                    "table.pivot_column": "campoA",
+                    "column_settings": {
+                        "[\"name\",\"sum\"]": {
+                            "number_separators": ",."
+                        }
+                    },
+                    "series_settings": {
+                        "sum": {
+                            "line.interpolate": "linear",
+                            "line.marker_enabled": true,
+                            "display": "line",
+                            "color": "#A989C5"
+                        }
+                    },
+                    "graph.y_axis.auto_range": true,
+                    "graph.x_axis.scale": "timeseries",
+                    "graph.dimensions": [
+                        "data"
+                    ],
+                    "graph.y_axis.min": 700
+                },
+                "dataset_query": {
+                    "type": "query"
+                }
+            },
+            "col": 8,
+            "id": 899,
+            "parameter_mappings": [
+                {
+                    "parameter_id": "3249390b",
+                    "card_id": 627,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14914
+                        ]
+                    ]
+                },
+                {
+                    "parameter_id": "d74805ef",
+                    "card_id": 627,
+                    "target": [
+                        "dimension",
+                        [
+                            "field-id",
+                            14892
+                        ]
+                    ]
+                }
+            ],
+            "card_id": 627,
+            "visualization_settings": {
+                "graph.show_values": true,
+                "graph.x_axis.labels_enabled": false,
+                "table.cell_column": "attualmente_positivi",
+                "graph.y_axis.max": 11100,
+                "graph.x_axis.axis_enabled": false,
+                "graph.y_axis.labels_enabled": false,
+                "card.title": "Andamento attualmente positivi ultima settimana",
+                "graph.label_value_frequency": "fit",
+                "graph.metrics": [
+                    "sum"
+                ],
+                "graph.y_axis.axis_enabled": false,
+                "graph.label_value_formatting": "auto",
+                "scalar.switch_positive_negative": true,
+                "table.pivot_column": "campoA",
+                "column_settings": {
+                    "[\"name\",\"sum\"]": {
+                        "number_separators": ",."
+                    }
+                },
+                "series_settings": {
+                    "sum": {
+                        "line.interpolate": "linear",
+                        "line.marker_enabled": true,
+                        "display": "line",
+                        "color": "#EF8C8C"
+                    }
+                },
+                "graph.y_axis.auto_range": false,
+                "graph.x_axis.scale": "timeseries",
+                "graph.dimensions": [
+                    "data"
+                ],
+                "graph.y_axis.min": 7000
+            },
+            "dashboard_id": 65,
+            "sizeY": 3,
+            "row": 2
+        }
+    ],
+    "param_values": {
+        "14892": {
+            "values": [
+                "Acquasparta",
+                "Allerona",
+                "Alviano",
+                "Amelia",
+                "Arrone",
+                "Assisi",
+                "Attigliano",
+                "Avigliano Umbro",
+                "Baschi",
+                "Bastia Umbra",
+                "Bettona",
+                "Bevagna",
+                "Calvi dell'Umbria",
+                "Campello sul Clitunno",
+                "Cannara",
+                "Cascia",
+                "Castel Giorgio",
+                "Castel Ritaldi",
+                "Castel Viscardo",
+                "Castiglione del Lago",
+                "Cerreto di Spoleto",
+                "Citerna",
+                "Città della Pieve",
+                "Città di Castello",
+                "Collazzone",
+                "Corciano",
+                "Costacciaro",
+                "Deruta",
+                "Fabro",
+                "Ferentillo",
+                "Ficulle",
+                "Foligno",
+                "Fossato di Vico",
+                "Fratta Todina",
+                "Fuori Regione",
+                "Giano dell'Umbria",
+                "Giove",
+                "Gualdo Cattaneo",
+                "Gualdo Tadino",
+                "Guardea",
+                "Gubbio",
+                "Lisciano Niccone",
+                "Lugnano in Teverina",
+                "Magione",
+                "Marsciano",
+                "Massa Martana",
+                "Monte Castello di Vibio",
+                "Montecastrilli",
+                "Montecchio",
+                "Montefalco",
+                "Montefranco",
+                "Montegabbione",
+                "Monteleone di Spoleto",
+                "Monteleone d'Orvieto",
+                "Monte Santa Maria Tiberina",
+                "Montone",
+                "Narni",
+                "Nocera Umbra",
+                "Norcia",
+                "Orvieto",
+                "Ospedale di Branca",
+                "Ospedale di Città di Castello",
+                "Ospedale di Foligno",
+                "Ospedale di Orvieto",
+                "Ospedale di Perugia",
+                "Ospedale di Spoleto",
+                "Ospedale di Terni",
+                "Ospedale MVT Pantalla",
+                "Otricoli",
+                "Paciano",
+                "Panicale",
+                "Parrano",
+                "Passignano sul Trasimeno",
+                "Penna in Teverina",
+                "Perugia",
+                "Piegaro",
+                "Pietralunga",
+                "Poggiodomo",
+                "Polino",
+                "Porano",
+                "Preci",
+                "Prov.Perugia",
+                "Prov.Terni",
+                "San Gemini",
+                "San Giustino",
+                "Sant'Anatolia di Narco",
+                "San Venanzo",
+                "Scheggia e Pascelupo",
+                "Scheggino",
+                "Sellano",
+                "Sigillo",
+                "Spello",
+                "Spoleto",
+                "Stroncone",
+                "Terni",
+                "Todi",
+                "Torgiano",
+                "Trevi",
+                "Tuoro sul Trasimeno",
+                "Umbertide",
+                "Umbria",
+                "Valfabbrica",
+                "Vallo di Nera",
+                "Valtopina"
+            ],
+            "human_readable_values": {},
+            "field_id": 14892
+        }
+    },
+    "param_fields": {
+        "14892": {
+            "id": 14892,
+            "table_id": 873,
+            "display_name": "denominazione_geo",
+            "base_type": "type/Text",
+            "special_type": "type/Category",
+            "has_field_values": "list",
+            "name_field": null,
+            "dimensions": []
+        },
+        "14914": {
+            "id": 14914,
+            "table_id": 873,
+            "display_name": "data",
+            "base_type": "type/DateTime",
+            "special_type": null,
+            "has_field_values": "none",
+            "name_field": null,
+            "dimensions": []
+        }
+    }
+}

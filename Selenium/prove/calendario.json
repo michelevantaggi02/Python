@@ -1,0 +1,34 @@
+{
+    "eventi":[
+        {
+            "titolo":"Compiti di TPSIT",
+            "data":"3/2/2021",
+            "ora":"16:27",
+            "descrizione":"Fai questo file JSON"
+        },
+        {
+            "titolo":"Compiti di inglese",
+            "data":"3/2/2021",
+            "ora":"19:00",
+            "descrizione":"rispondi alle domande sul libro"
+        },
+        {
+            "titolo":"Lezione di educazione fisica",
+            "data":"4/2/2021",
+            "ora":"10:55",
+            "descrizione":"connettiti a google meet"
+        },
+        {
+            "titolo":"Lezione di inglese",
+            "data":"4/2/2021",
+            "ora":"10:00",
+            "descrizione":"connettiti a google meet"
+        },
+        {
+            "titolo":"Lezione di gpoi",
+            "data":"4/2/2021",
+            "ora":"11:55",
+            "descrizione":"Studiare la pagina del libro"
+        }
+    ]
+}

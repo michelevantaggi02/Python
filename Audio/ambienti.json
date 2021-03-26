@@ -1,0 +1,37 @@
+{
+    "eclipse":{
+        "tipo":"ide",
+        "posizione":"C:\\Users\\michi\\Desktop\\javaScuola\\eclipse\\eclipse.exe -data",
+        "posizione progetti": "C:\\Users\\michi\\Desktop\\javaScuola\\workspace",
+        "posizione risorse":"src",
+        "progetto default":"Tpsit"
+    },
+    "visual":{
+        "tipo":"ide",
+        "posizione":"C:\\Users\\michi\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+        "posizione progetti":"C:\\Users\\michi\\Desktop\\Informatica",
+        "posizione risorse":"",
+        "progetto default":"Python"
+    },
+    "chrome":{
+        "tipo":"browser",
+        "posizione":"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+        "scelta profilo":"--profile-directory=\"",
+        "lista profili": ["Default\"","Profile 1\""],
+        "nuova finestra": "--new-window"
+        
+    },
+    "meet":{
+        "tipo":"link",
+        "posizione":"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe --profile-directory=\"Profile 1\" --new-window ",
+        "panfili":"https://meet.google.com/lookup/ahsubnwvsl",
+        "maranghi": "https://meet.google.com/lookup/gcimqyewqq",
+        "stocchi":"https://meet.google.com/lookup/fmgmi7pgtu",
+        "tamara":"https://meet.google.com/lookup/g4fzdwabki",
+        "pallucca":"https://meet.google.com/lookup/eyouizlynl",
+        "piccotti": "https://meet.google.com/lookup/crr3f7cace",
+        "anastasi":"https://meet.google.com/hgs-xiet-kec?authuser=1",
+        "carletti":"https://meet.google.com",
+        "matematica":"https://meet.google.com/emn-kmak-scz?pli=1&authuser=1"
+    }
+}
