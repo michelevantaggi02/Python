@@ -10,6 +10,7 @@ dictlinee = dict()
 medie = dict()
 traduzioni = dict()
 fig = None
+pos_file = "C:/Users/michi/Desktop/Workspace/Python/Selenium/COD/medie.json"
 def onpick(event):
     global fig
     # on the pick event, find the orig line corresponding to the
@@ -27,7 +28,7 @@ def onpick(event):
     fig.canvas.draw()
 
 def carica_json():
-    global medie, traduzioni,f
+    global medie, traduzioni,f,pos_file
     f = requests.session()
     payload = {
         "Host": "my.callofduty.com",
@@ -54,7 +55,7 @@ def carica_json():
     traduzioni = requests.get("https://my.callofduty.com/content/atvi/callofduty/mycod/web/it/data/json/iq-content-xweb.js")
     traduzioni = json.loads(traduzioni.text)
     
-    file_medie = open("C:/Users/michi/Desktop/Informatica/Python/Selenium/COD/medie.json", "r")
+    file_medie = open(pos_file, "r")
     stringa_medie = file_medie.read()
     medie = json.loads(stringa_medie)
     file_medie.close()
@@ -91,7 +92,7 @@ def carica_json():
         nuove[i].reverse()
         medie[i] = medie[i]+ nuove[i]
     print(list(medie.keys()))
-    scrivi_medie = open("C:/Users/michi/Desktop/Informatica/Python/Selenium/COD/medie.json", "w")
+    scrivi_medie = open(pos_file, "w")
     stringa_medie = json.dumps(medie)
     scrivi_medie.write(stringa_medie)
     scrivi_medie.close()
