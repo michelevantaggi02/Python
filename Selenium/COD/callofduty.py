@@ -164,6 +164,24 @@ def stats():
     mng = mp.get_current_fig_manager()
     mng.window.state("zoomed")
     mp.show()
+def pie():
+    global medie, traduzioni
+    fig, ax = mp.subplots()
+    valori = []
+    tradotto = []
+    for i in list(medie.keys())[2:]:
+        valori.append(len(medie[i]))
+        tradotto.append(traduzioni["maps:mw-{}:1".format(i)])
+    
+    #print(len(valori), len(traduzioni[:len(valori)-2]))
+    lib.rcParams["font.size"] = 8
+    mp.pie(valori, labels=tradotto,  autopct='%1.1f%%', pctdistance=1.05, labeldistance=1.2, shadow=True)
+    mng = mp.get_current_fig_manager()
+    mng.window.state("zoomed")
+    mp.subplots_adjust(left=0, top=1, bottom=0, right= 1)
+    mp.title("Torta partite")
+    mp.show()
 carica_json()
-mostra_grafico()
-stats()
+#mostra_grafico()
+#stats()
+pie()
